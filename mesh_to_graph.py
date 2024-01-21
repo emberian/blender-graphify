@@ -66,7 +66,7 @@ def graph_menu_button(self, context):
     self.layout.operator(Graphify.bl_idname, text="Graphify")
 
 class AddCuboid(bpy.types.Operator, object_utils.AddObjectHelper):
-    """Construct a torus mesh"""
+    """Construct a cuboid (subdivided cube) mesh"""
     bl_idname = "mesh.primitive_cuboid_add"
     bl_label = "Add Cuboid"
     bl_options = {'REGISTER', 'UNDO', 'PRESET'}
